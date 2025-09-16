@@ -1,4 +1,4 @@
-# -<!doctype html>
+<!DOCTYPE html>
 <html lang="kk">
 <head>
   <meta charset="utf-8">
@@ -20,24 +20,4 @@
   <input id="name" type="text" placeholder="Атыңды енгіз" />
   <div>
     <button class="btn" onclick="submitRSVP('Барамын')">Барамын</button>
-    <button class="btn" onclick="submitRSVP('Бармаймын')">Бармаймын</button>
-    <button class="btn" onclick="submitRSVP('Жалғыз барамын')">Жалғыз барамын</button>
-  </div>
-  <div id="result"></div>
-
-  <script>
-    function submitRSVP(choice){
-      const name = document.getElementById('name').value.trim();
-      if(!name){
-        alert("Алдымен атыңды жаз!");
-        return;
-      }
-      // Жауапты шығару
-      document.getElementById('result').innerText = 
-        name + " таңдады: " + choice;
-      
-      // Егер кейін серверге/Google Sheets-ке сақтағың келсе — осы жерге код қосылады
-    }
-  </script>
-</body>
-</html>
+    <button class="btn"
